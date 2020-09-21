@@ -2,13 +2,12 @@ const mysql = require('mysql2');
 
 // create connecion to database
 const connection = mysql.createConnection({
-    host: 'localhost',
-    port: 3300,
+    host: "localhost",
     // your MySQL username
-    user: 'root',
+    user: "root",
     // your MySQL password
-    password: '123',
-    database: 'employee_trackerDB'
+    password: "",
+    database: "employee"
 });
 
 connection.connect(err => {
@@ -24,3 +23,5 @@ afterConnection = () => {
         connection.end();
     });
 };
+
+module.exports = connection;
