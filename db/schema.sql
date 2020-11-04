@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 DROP DATABASE IF EXISTS employee;
 CREATE DATABASE employee;
 
 USE employee;
+=======
+DROP TABLE IF EXISTS employee;
+CREATE DATABASE employees;
+
+USE employees;
+>>>>>>> develop
 
 CREATE TABLE department (
     id INT PRIMARY KEY,
